@@ -1,0 +1,704 @@
+﻿[build] TTS -> C:\reels\the-list\audio\s1_seg0.mp3 :: "Three a.m. The last night clerk left a list under the regist..."
+[build] TTS -> C:\reels\the-list\audio\s1_seg1.mp3 :: "Rule number one... Never take cash you can't explain...."
+[build] TTS -> C:\reels\the-list\audio\s2_seg0.mp3 :: "At 3:12, a man in a gray coat slides an envelope across the ..."
+[build] TTS -> C:\reels\the-list\audio\s2_seg1.mp3 :: "The list says: Banks ask. Feds ask harder...."
+[build] TTS -> C:\reels\the-list\audio\s3_seg0.mp3 :: "Rule two...."
+[build] TTS -> C:\reels\the-list\audio\s3_seg1.mp3 :: "The camera over the register is not the one that matters...."
+[build] TTS -> C:\reels\the-list\audio\s4_seg0.mp3 :: "The gray coat is gone. The next customer is a woman in a dar..."
+[build] TTS -> C:\reels\the-list\audio\s4_seg1.mp3 :: "Did you see anyone here tonight? Every answer is either the ..."
+[build] TTS -> C:\reels\the-list\audio\s5_seg0.mp3 :: "Cash on hand, four thousand two hundred ten. Logged, zero. S..."
+node : node:child_process:1029
+In Zeile:1 Zeichen:454
++ ... able('Path','User'); cd C:\reels\the-list; node build.js *> build.log
++                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:child_process:1029:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    throw err;
+    ^
+
+Error: Command failed: curl -s -X POST http://127.0.0.1:3900/v1/audio/speech -H Content-Type: application/json -d 
+{"model":"omnivoice","input":"Cash on hand, four thousand two hundred ten. Logged, zero. Suspicion, six 
+percent.","voice":"1d2e2ec2","instructions":"calm, slightly hoarse, mysterious true-crime narrator, quiet steady 
+pace","response_format":"mp3","speed":0.95} -o C:\reels\the-list\audio\s5_seg0.mp3.raw -m 300
+    at genericNodeError (node:internal/errors:999:15)
+    at wrappedFn (node:internal/errors:544:14)
+    at checkExecSyncError (node:child_process:990:11)
+    at execFileSync (node:child_process:1026:15)
+    at ttsToFile (C:\reels\the-list\build.js:91:3)
+    at C:\reels\the-list\build.js:115:5
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (C:\reels\the-list\build.js:113:14)
+    at Module._compile (node:internal/modules/cjs/loader:1968:14)
+    at Object..js (node:internal/modules/cjs/loader:2108:10) {
+  status: 56,
+  signal: null,
+  output: [ null, Buffer(0) [Uint8Array] [], Buffer(0) [Uint8Array] [] ],
+  pid: 35272,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(0) [Uint8Array] []
+}
+
+Node.js v26.13.1
+[build] skip (exists) C:\reels\the-list\audio\s1_seg0.mp3
+[build] skip (exists) C:\reels\the-list\audio\s1_seg1.mp3
+[build] skip (exists) C:\reels\the-list\audio\s2_seg0.mp3
+[build] skip (exists) C:\reels\the-list\audio\s2_seg1.mp3
+[build] skip (exists) C:\reels\the-list\audio\s3_seg0.mp3
+[build] skip (exists) C:\reels\the-list\audio\s3_seg1.mp3
+[build] skip (exists) C:\reels\the-list\audio\s4_seg0.mp3
+[build] skip (exists) C:\reels\the-list\audio\s4_seg1.mp3
+[build] TTS -> C:\reels\the-list\audio\s5_seg0.mp3 :: "Cash on hand, four thousand two hundred ten. Logged, zero. S..."
+[build] TTS -> C:\reels\the-list\audio\s5_seg1.mp3 :: "Someone else has been counting too...."
+[build] TTS -> C:\reels\the-list\audio\s6_seg0.mp3 :: "Under the list, in handwriting that looks like yours......"
+[build] TTS -> C:\reels\the-list\audio\s6_seg1.mp3 :: "Rule four. Don't be the one who stays...."
+[build] TTS -> C:\reels\the-list\audio\s7_seg0.mp3 :: "Part two tomorrow...."
+[build] TTS -> C:\reels\the-list\audio\s7_seg1.mp3 :: "Comment TAKE or REFUSE...."
+[build] TTS -> C:\reels\the-list\audio\s7_seg2.mp3 :: "The majority writes part two...."
+[build] All TTS segments generated.
+node : ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+In Zeile:1 Zeichen:454
++ ... ble('Path','User'); cd C:\reels\the-list; node build.js *>> build.log
++                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ffmpeg version ...mpeg developers:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s1_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 000002121b771940] video:0KiB audio:1KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 36.419753%
+size=       1KiB time=00:00:00.60 bitrate=  11.8kbits/s speed=38.5x elapsed=0:00:00.01    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 0000019a3d124540] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s1_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_1.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 0000019a3d126040] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 70447104 
+>= 70136047
+[mp3 @ 0000019a3d129c00] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 0000019a3d09f380] video:0KiB audio:130KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.321495%
+size=     130KiB time=00:00:08.88 bitrate= 120.3kbits/s speed= 805x elapsed=0:00:00.01    
+[build] Scene 1 audio duration: 8.90s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s2_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 0000023d0c0ef640] video:0KiB audio:1KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 42.753623%
+size=       1KiB time=00:00:00.50 bitrate=  12.6kbits/s speed=  90x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 000001b7da334e40] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s2_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_2.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 000001b7da335bc0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 
+114476544 >= 114165487
+[mp3 @ 000001b7dbec1d00] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 000001b7da2b1240] video:0KiB audio:169KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.247995%
+size=     169KiB time=00:00:11.25 bitrate= 123.0kbits/s speed=1.8e+03x elapsed=0:00:00.00    
+[build] Scene 2 audio duration: 11.28s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s3_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 0000026231ecfe40] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 65.555556%
+size=       1KiB time=00:00:00.30 bitrate=  15.9kbits/s speed=  80x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 00000123a90af880] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s3_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_3.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 00000123a90d8980] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 20321280 
+>= 20010223
+[mp3 @ 00000123a90e6d00] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 00000123a9020e00] video:0KiB audio:79KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.528395%
+size=      80KiB time=00:00:05.34 bitrate= 122.0kbits/s speed=1.23e+03x elapsed=0:00:00.00    
+[build] Scene 3 audio duration: 5.38s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s4_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 00000237696009c0] video:0KiB audio:1KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 42.753623%
+size=       1KiB time=00:00:00.50 bitrate=  12.6kbits/s speed= 123x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 0000022f2e916400] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s4_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_4.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 0000022f2e91e3c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 94155264 
+>= 93844207
+[mp3 @ 0000022f304c1d00] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 0000022f2e892000] video:0KiB audio:179KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.233451%
+size=     179KiB time=00:00:11.92 bitrate= 123.3kbits/s speed=1.01e+03x elapsed=0:00:00.01    
+[build] Scene 4 audio duration: 11.95s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s5_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 0000018c0733f280] video:0KiB audio:1KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 36.419753%
+size=       1KiB time=00:00:00.60 bitrate=  11.8kbits/s speed= 107x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 00000128265e6700] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s5_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_5.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 00000128265e7380] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 69092352 
+>= 68781295
+[mp3 @ 00000128285e1bc0] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 00000128265620c0] video:0KiB audio:114KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.368229%
+size=     114KiB time=00:00:07.82 bitrate= 119.3kbits/s speed= 719x elapsed=0:00:00.01    
+[build] Scene 5 audio duration: 7.85s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s6_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 0000022755d40480] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 51.754386%
+size=       1KiB time=00:00:00.40 bitrate=  13.8kbits/s speed=92.5x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 0000021c42857800] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s6_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_6.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 0000021c428800c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 46400256 
+>= 46089199
+[mp3 @ 0000021c42857800] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 0000021c427ce980] video:0KiB audio:89KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.471906%
+size=      89KiB time=00:00:06.04 bitrate= 120.7kbits/s speed= 840x elapsed=0:00:00.00    
+[build] Scene 6 audio duration: 6.07s
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s7_pause0.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 00000204593ffdc0] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 51.754386%
+size=       1KiB time=00:00:00.40 bitrate=  13.8kbits/s speed=  83x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'anullsrc=r=24000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 192 kb/s
+  Stream #0:0: Audio: pcm_u8, 24000 Hz, mono, u8, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_u8 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'C:\reels\the-list\audio\s7_pause1.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc63.1.102 libmp3lame
+[out#0/mp3 @ 000001d3ca9fe7c0] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 65.555556%
+size=       1KiB time=00:00:00.30 bitrate=  15.9kbits/s speed=68.8x elapsed=0:00:00.00    
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mp3 @ 0000021a7da54d80] Estimating duration from bitrate, this may be inaccurate
+Input #0, concat, from 'C:\reels\the-list\audio\s7_list.txt':
+  Duration: N/A, start: 0.000000, bitrate: 128 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, mp3, to 'C:\reels\the-list\audio\scene_7.mp3':
+  Metadata:
+    TSSE            : Lavf63.1.102
+  Stream #0:0: Audio: mp3, 24000 Hz, mono, fltp, 128 kb/s
+Press [q] to stop, [?] for help
+[mp3 @ 0000021a7da56880] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 25401600 
+>= 25090543
+[mp3 @ 0000021a7f491d00] Estimating duration from bitrate, this may be inaccurate
+[mp3 @ 0000021a7da56880] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 58818816 
+>= 58507759
+[mp3 @ 0000021a7da54d80] Estimating duration from bitrate, this may be inaccurate
+[out#0/mp3 @ 0000021a7d9d1a00] video:0KiB audio:92KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.452853%
+size=      93KiB time=00:00:06.55 bitrate= 115.9kbits/s speed= 880x elapsed=0:00:00.00    
+[build] Scene 7 audio duration: 6.65s
+[build] DONE_AUDIO_PHASE

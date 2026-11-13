@@ -1,0 +1,1431 @@
+﻿[video] Rendering scene 1 (9.40s)
+node : ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+In Zeile:1 Zeichen:454
++ ... 'User'); cd C:\reels\the-list; node build_video.js *> build_video.log
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ffmpeg version ...mpeg developers:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=9.404:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_1.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:08.90, start: 0.046042, bitrate: 119 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 119 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001a6adbcc300] using SAR=1/1
+[libx264 @ 000001a6adbcc300] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001a6adbcc300] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001a6adbcc300] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_1.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   58 fps=0.0 q=29.0 size=       0KiB time=00:00:01.86 bitrate=   0.2kbits/s speed=3.64x elapsed=0:00:00.51    
+frame=  242 fps=233 q=29.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.03    
+[out#0/mp4 @ 000001a6adb30900] video:65KiB audio:167KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.644248%
+frame=  266 fps=247 q=-1.0 Lsize=     243KiB time=00:00:08.88 bitrate= 224.4kbits/s speed=8.25x elapsed=0:00:01.07    
+[libx264 @ 000001a6adbcc300] frame I:2     Avg QP:17.25  size: 21132
+[libx264 @ 000001a6adbcc300] frame P:67    Avg QP:11.03  size:    98
+[libx264 @ 000001a6adbcc300] frame B:197   Avg QP:14.04  size:    89
+[libx264 @ 000001a6adbcc300] consecutive B-frames:  1.1%  0.0%  1.1% 97.7%
+[libx264 @ 000001a6adbcc300] mb I  I16..4: 34.6% 58.7%  6.7%
+[libx264 @ 000001a6adbcc300] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:99.9%
+[libx264 @ 000001a6adbcc300] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.0%  skip:99.8%  
+L0:59.7% L1:40.3% BI: 0.0%
+[libx264 @ 000001a6adbcc300] 8x8 transform intra:58.5% inter:3.7%
+[libx264 @ 000001a6adbcc300] coded y,uvDC,uvAC intra: 3.9% 0.4% 0.4% inter: 0.0% 0.0% 0.0%
+[libx264 @ 000001a6adbcc300] i16 v,h,dc,p: 97%  1%  2%  0%
+[libx264 @ 000001a6adbcc300] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 78%  5% 17%  0%  0%  0%  0%  0%  0%
+[libx264 @ 000001a6adbcc300] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 52% 18% 10%  2%  3%  5%  4%  3%  3%
+[libx264 @ 000001a6adbcc300] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 000001a6adbcc300] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001a6adbcc300] ref P L0: 83.0%  1.7% 12.5%  2.8%
+[libx264 @ 000001a6adbcc300] ref B L0: 48.4% 51.3%  0.3%
+[libx264 @ 000001a6adbcc300] ref B L1: 97.8%  2.2%
+[libx264 @ 000001a6adbcc300] kb/s:59.80
+[aac @ 000001a6adbfb800] Qavg: 61923.781
+[video] Rendering scene 2 (11.78s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=11.78:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_2.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:11.28, start: 0.046042, bitrate: 122 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 122 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000023cd30b9800] using SAR=1/1
+[libx264 @ 0000023cd30b9800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000023cd30b9800] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000023cd30b9800] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_2.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   73 fps=0.0 q=29.0 size=       0KiB time=00:00:02.36 bitrate=   0.2kbits/s speed=4.66x elapsed=0:00:00.50    
+frame=  233 fps=227 q=29.0 size=       0KiB time=00:00:07.70 bitrate=   0.0kbits/s speed= 7.5x elapsed=0:00:01.02    
+[out#0/mp4 @ 0000023cd2ff1cc0] video:60KiB audio:210KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.926845%
+frame=  337 fps=268 q=-1.0 Lsize=     284KiB time=00:00:11.25 bitrate= 206.4kbits/s speed=8.96x elapsed=0:00:01.25    
+[libx264 @ 0000023cd30b9800] frame I:2     Avg QP:16.31  size: 16589
+[libx264 @ 0000023cd30b9800] frame P:85    Avg QP:10.44  size:    88
+[libx264 @ 0000023cd30b9800] frame B:250   Avg QP:13.67  size:    82
+[libx264 @ 0000023cd30b9800] consecutive B-frames:  0.9%  0.6%  0.0% 98.5%
+[libx264 @ 0000023cd30b9800] mb I  I16..4: 42.8% 52.9%  4.3%
+[libx264 @ 0000023cd30b9800] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 0000023cd30b9800] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  
+L0:67.4% L1:32.6% BI: 0.0%
+[libx264 @ 0000023cd30b9800] 8x8 transform intra:52.8% inter:4.0%
+[libx264 @ 0000023cd30b9800] coded y,uvDC,uvAC intra: 2.7% 0.0% 0.0% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0000023cd30b9800] i16 v,h,dc,p: 97%  1%  2%  0%
+[libx264 @ 0000023cd30b9800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 69%  1% 30%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0000023cd30b9800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 46% 17% 13%  3%  4%  4%  5%  3%  4%
+[libx264 @ 0000023cd30b9800] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0000023cd30b9800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000023cd30b9800] ref P L0: 94.7%  0.5%  4.4%  0.4%
+[libx264 @ 0000023cd30b9800] ref B L0: 35.5% 64.5%
+[libx264 @ 0000023cd30b9800] ref B L1: 99.9%  0.1%
+[libx264 @ 0000023cd30b9800] kb/s:43.52
+[aac @ 0000023cd4bc2e00] Qavg: 63323.707
+[video] Rendering scene 3 (5.88s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=5.876:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_3.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:05.38, start: 0.046042, bitrate: 121 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 120 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000021cdef6ad80] using SAR=1/1
+[libx264 @ 0000021cdef6ad80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000021cdef6ad80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000021cdef6ad80] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_3.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   68 fps=0.0 q=29.0 size=       0KiB time=00:00:02.20 bitrate=   0.2kbits/s speed=4.25x elapsed=0:00:00.51    
+[out#0/mp4 @ 0000021cdeecfec0] video:28KiB audio:103KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 5.372175%
+frame=  160 fps=0.0 q=-1.0 Lsize=     138KiB time=00:00:05.35 bitrate= 211.5kbits/s speed=7.13x elapsed=0:00:00.75    
+[libx264 @ 0000021cdef6ad80] frame I:1     Avg QP:14.58  size: 15356
+[libx264 @ 0000021cdef6ad80] frame P:40    Avg QP:10.54  size:    89
+[libx264 @ 0000021cdef6ad80] frame B:119   Avg QP:13.66  size:    76
+[libx264 @ 0000021cdef6ad80] consecutive B-frames:  0.6%  0.0%  1.9% 97.5%
+[libx264 @ 0000021cdef6ad80] mb I  I16..4: 55.7% 39.6%  4.7%
+[libx264 @ 0000021cdef6ad80] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 0000021cdef6ad80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  
+L0:67.8% L1:32.2% BI: 0.0%
+[libx264 @ 0000021cdef6ad80] 8x8 transform intra:39.6% inter:10.2%
+[libx264 @ 0000021cdef6ad80] coded y,uvDC,uvAC intra: 2.7% 0.4% 0.4% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0000021cdef6ad80] i16 v,h,dc,p: 98%  1%  1%  0%
+[libx264 @ 0000021cdef6ad80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 59%  6% 35%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0000021cdef6ad80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 52% 19%  9%  2%  3%  5%  4%  3%  3%
+[libx264 @ 0000021cdef6ad80] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0000021cdef6ad80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000021cdef6ad80] ref P L0: 89.1%  4.3%  5.1%  1.4%
+[libx264 @ 0000021cdef6ad80] ref B L0: 21.3% 78.7%
+[libx264 @ 0000021cdef6ad80] kb/s:41.88
+[aac @ 0000021ce0990ec0] Qavg: 59456.344
+[video] Rendering scene 4 (12.45s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=12.452:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_4.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:11.95, start: 0.046042, bitrate: 123 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 122 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 00000206b32c1740] using SAR=1/1
+[libx264 @ 00000206b32c1740] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000206b32c1740] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 00000206b32c1740] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_4.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   35 fps=0.0 q=29.0 size=       0KiB time=00:00:03.18 bitrate=   0.1kbits/s speed=6.24x elapsed=0:00:00.50    
+frame=  132 fps=128 q=29.0 size=       0KiB time=00:00:06.40 bitrate=   0.1kbits/s speed=6.23x elapsed=0:00:01.02    
+frame=  226 fps=147 q=29.0 size=       0KiB time=00:00:09.54 bitrate=   0.0kbits/s speed=6.22x elapsed=0:00:01.53    
+frame=  254 fps=123 q=29.0 size=       0KiB time=00:00:10.58 bitrate=   0.0kbits/s speed=5.14x elapsed=0:00:02.05    
+[out#0/mp4 @ 00000206b32010c0] video:83KiB audio:223KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.579583%
+frame=  357 fps=149 q=-1.0 Lsize=     320KiB time=00:00:11.92 bitrate= 219.9kbits/s speed=4.99x elapsed=0:00:02.39    
+[libx264 @ 00000206b32c1740] frame I:2     Avg QP:16.11  size: 26489
+[libx264 @ 00000206b32c1740] frame P:90    Avg QP:10.59  size:    97
+[libx264 @ 00000206b32c1740] frame B:265   Avg QP:13.72  size:    84
+[libx264 @ 00000206b32c1740] consecutive B-frames:  0.8%  0.6%  0.0% 98.6%
+[libx264 @ 00000206b32c1740] mb I  I16..4: 40.7% 51.9%  7.5%
+[libx264 @ 00000206b32c1740] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 00000206b32c1740] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.0%  skip:99.8%  
+L0:62.4% L1:37.5% BI: 0.0%
+[libx264 @ 00000206b32c1740] 8x8 transform intra:51.7% inter:4.7%
+[libx264 @ 00000206b32c1740] coded y,uvDC,uvAC intra: 4.5% 0.4% 0.4% inter: 0.0% 0.0% 0.0%
+[libx264 @ 00000206b32c1740] i16 v,h,dc,p: 97%  1%  2%  0%
+[libx264 @ 00000206b32c1740] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 78%  3% 18%  0%  0%  0%  0%  0%  0%
+[libx264 @ 00000206b32c1740] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 18% 11%  3%  3%  5%  4%  3%  4%
+[libx264 @ 00000206b32c1740] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 00000206b32c1740] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 00000206b32c1740] ref P L0: 92.7%  0.8%  5.7%  0.8%
+[libx264 @ 00000206b32c1740] ref B L0: 39.0% 60.9%  0.1%
+[libx264 @ 00000206b32c1740] ref B L1: 99.8%  0.2%
+[libx264 @ 00000206b32c1740] kb/s:56.47
+[aac @ 00000206b32af6c0] Qavg: 63123.742
+[video] Rendering scene 5 (8.35s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_5.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:07.85, start: 0.046042, bitrate: 118 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 118 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[Parsed_drawtext_1 @ 000002492ef7a500] Stray % near ' → 6%'
+[vf#0:0 @ 000002492ea71140] Error while filtering: Invalid argument
+[vf#0:0 @ 000002492ea71140] Task finished with error code: -22 (Invalid argument)
+[vf#0:0 @ 000002492ea71140] Terminating thread with return code -22 (Invalid argument)
+[vost#0:0/libx264 @ 000002492ea60740] [enc:libx264 @ 000002492ea3cec0] Could not open encoder before EOF
+[vost#0:0/libx264 @ 000002492ea60740] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/libx264 @ 000002492ea60740] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 000002492e9c2a40] Nothing was written into output file, because at least one of its streams received no 
+packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.01    
+[aac @ 000002492ea75f80] Qavg: nan
+Conversion failed!
+node:child_process:1029
+    throw err;
+    ^
+
+Error: Command failed: ffmpeg -y -f lavfi -i color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30 -i 
+C:\reels\the-list\audio\scene_5.mp3 -vf drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='CASH $4,210 · LOGGED $0
+':fontcolor=0xFF2D78:fontsize=54:x=(w-text_w)/2:y=(h*0.30)+0:box=0:line_spacing=10,drawtext=fontfile='C\:/Windows/Fonts
+/arialbd.ttf':text='SUSPICION 0\% → 6\%':fontcolor=white:fontsize=46:x=(w-text_w)/2:y=(h*0.30)+70:box=0:line_spacing=10
+,drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='Cash on hand, four thousand':fontcolor=white:fontsize=44:x=(w-
+text_w)/2:y=h*0.72+0:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8,drawtext=fontfile='C\:/Windows/Fonts/ari
+albd.ttf':text='two hundred ten. Logged,':fontcolor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+58:box=1:boxcolor=0x0D0D0
+D@0.55:boxborderw=14:line_spacing=8,drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='zero. Suspicion, six':fontc
+olor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+116:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8,drawtext=f
+ontfile='C\:/Windows/Fonts/arialbd.ttf':text='percent. Someone else 
+has':fontcolor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+174:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8 
+-c:v libx264 -pix_fmt yuv420p -profile:v high -c:a aac -b:a 192k -ar 44100 -shortest 
+C:\reels\the-list\video\scene_5.mp4
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+
+  libavutil      61.  1.102 / 61.  1.102
+
+  libavcodec     63.  1.102 / 63.  1.102
+
+  libavformat    63.  1.102 / 63.  1.102
+
+  libavdevice    63.  1.102 / 63.  1.102
+
+  libavfilter    12.  1.102 / 12.  1.102
+
+  libswscale     10.  1.102 / 10.  1.102
+
+  libswresample   7.  1.102 /  7.  1.102
+
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30':
+
+  Duration: N/A, start: 0.000000, bitrate: N/A
+
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_5.mp3':
+
+  Metadata:
+
+    encoder         : Lavf63.1.102
+
+  Duration: 00:00:07.85, start: 0.046042, bitrate: 118 kb/s
+
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 118 kb/s, start 0.046042
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+
+Press [q] to stop, [?] for help
+
+[Parsed_drawtext_1 @ 000002492ef7a500] Stray % near ' → 6%'
+
+[vf#0:0 @ 000002492ea71140] Error while filtering: Invalid argument
+
+[vf#0:0 @ 000002492ea71140] Task finished with error code: -22 (Invalid argument)
+
+[vf#0:0 @ 000002492ea71140] Terminating thread with return code -22 (Invalid argument)
+
+[vost#0:0/libx264 @ 000002492ea60740] [enc:libx264 @ 000002492ea3cec0] Could not open encoder before EOF
+
+[vost#0:0/libx264 @ 000002492ea60740] Task finished with error code: -22 (Invalid argument)
+
+[vost#0:0/libx264 @ 000002492ea60740] Terminating thread with return code -22 (Invalid argument)
+
+[out#0/mp4 @ 000002492e9c2a40] Nothing was written into output file, because at least one of its streams received no 
+packets.
+
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.01    
+
+[aac @ 000002492ea75f80] Qavg: nan
+
+Conversion failed!
+
+
+    at genericNodeError (node:internal/errors:999:15)
+    at wrappedFn (node:internal/errors:544:14)
+    at checkExecSyncError (node:child_process:990:11)
+    at execFileSync (node:child_process:1026:15)
+    at buildSceneVideo (C:\reels\the-list\build_video.js:76:3)
+    at Array.map (<anonymous>)
+    at Object.<anonymous> (C:\reels\the-list\build_video.js:80:27)
+    at Module._compile (node:internal/modules/cjs/loader:1968:14)
+    at Object..js (node:internal/modules/cjs/loader:2108:10)
+    at Module.load (node:internal/modules/cjs/loader:1690:32) {
+  status: 4294967274,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(3809) [Uint8Array] [
+      102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+      111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+      108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+      103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+      121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+       48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+       32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+      108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+      105, 108, 116,  32,
+      ... 3709 more items
+    ]
+  ],
+  pid: 37608,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(3809) [Uint8Array] [
+    102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+    111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+    108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+    103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+    121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+     48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+     32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+    108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+    105, 108, 116,  32,
+    ... 3709 more items
+  ]
+}
+
+Node.js v26.13.1
+[video] skip (exists) C:\reels\the-list\video\scene_1.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_2.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_3.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_4.mp4
+[video] Rendering scene 5 (8.35s)
+node : ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+In Zeile:1 Zeichen:454
++ ... User'); cd C:\reels\the-list; node build_video.js *>> build_video.log
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ffmpeg version ...mpeg developers:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_5.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:07.85, start: 0.046042, bitrate: 118 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 118 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[Parsed_drawtext_1 @ 000001f29e5fd480] Stray % near '% → 6%%'
+[vf#0:0 @ 000001f29e5f5500] Error while filtering: Invalid argument
+[vf#0:0 @ 000001f29e5f5500] Task finished with error code: -22 (Invalid argument)
+[vf#0:0 @ 000001f29e5f5500] Terminating thread with return code -22 (Invalid argument)
+[vost#0:0/libx264 @ 000001f29e5e7ec0] [enc:libx264 @ 000001f29e5cc500] Could not open encoder before EOF
+[vost#0:0/libx264 @ 000001f29e5e7ec0] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/libx264 @ 000001f29e5e7ec0] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 000001f29e551880] Nothing was written into output file, because at least one of its streams received no 
+packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.01    
+[aac @ 000001f29e61d000] Qavg: nan
+Conversion failed!
+node:child_process:1029
+    throw err;
+    ^
+
+Error: Command failed: ffmpeg -y -f lavfi -i color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30 -i 
+C:\reels\the-list\audio\scene_5.mp3 -vf drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='CASH $4,210 · LOGGED $0
+':fontcolor=0xFF2D78:fontsize=54:x=(w-text_w)/2:y=(h*0.30)+0:box=0:line_spacing=10,drawtext=fontfile='C\:/Windows/Fonts
+/arialbd.ttf':text='SUSPICION 0%% → 6%%':fontcolor=white:fontsize=46:x=(w-text_w)/2:y=(h*0.30)+70:box=0:line_spacing=10
+,drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='Cash on hand, four thousand':fontcolor=white:fontsize=44:x=(w-
+text_w)/2:y=h*0.72+0:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8,drawtext=fontfile='C\:/Windows/Fonts/ari
+albd.ttf':text='two hundred ten. Logged,':fontcolor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+58:box=1:boxcolor=0x0D0D0
+D@0.55:boxborderw=14:line_spacing=8,drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='zero. Suspicion, six':fontc
+olor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+116:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8,drawtext=f
+ontfile='C\:/Windows/Fonts/arialbd.ttf':text='percent. Someone else 
+has':fontcolor=white:fontsize=44:x=(w-text_w)/2:y=h*0.72+174:box=1:boxcolor=0x0D0D0D@0.55:boxborderw=14:line_spacing=8 
+-c:v libx264 -pix_fmt yuv420p -profile:v high -c:a aac -b:a 192k -ar 44100 -shortest 
+C:\reels\the-list\video\scene_5.mp4
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+
+  libavutil      61.  1.102 / 61.  1.102
+
+  libavcodec     63.  1.102 / 63.  1.102
+
+  libavformat    63.  1.102 / 63.  1.102
+
+  libavdevice    63.  1.102 / 63.  1.102
+
+  libavfilter    12.  1.102 / 12.  1.102
+
+  libswscale     10.  1.102 / 10.  1.102
+
+  libswresample   7.  1.102 /  7.  1.102
+
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30':
+
+  Duration: N/A, start: 0.000000, bitrate: N/A
+
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_5.mp3':
+
+  Metadata:
+
+    encoder         : Lavf63.1.102
+
+  Duration: 00:00:07.85, start: 0.046042, bitrate: 118 kb/s
+
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 118 kb/s, start 0.046042
+
+Stream mapping:
+
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+
+Press [q] to stop, [?] for help
+
+[Parsed_drawtext_1 @ 000001f29e5fd480] Stray % near '% → 6%%'
+
+[vf#0:0 @ 000001f29e5f5500] Error while filtering: Invalid argument
+
+[vf#0:0 @ 000001f29e5f5500] Task finished with error code: -22 (Invalid argument)
+
+[vf#0:0 @ 000001f29e5f5500] Terminating thread with return code -22 (Invalid argument)
+
+[vost#0:0/libx264 @ 000001f29e5e7ec0] [enc:libx264 @ 000001f29e5cc500] Could not open encoder before EOF
+
+[vost#0:0/libx264 @ 000001f29e5e7ec0] Task finished with error code: -22 (Invalid argument)
+
+[vost#0:0/libx264 @ 000001f29e5e7ec0] Terminating thread with return code -22 (Invalid argument)
+
+[out#0/mp4 @ 000001f29e551880] Nothing was written into output file, because at least one of its streams received no 
+packets.
+
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.01    
+
+[aac @ 000001f29e61d000] Qavg: nan
+
+Conversion failed!
+
+
+    at genericNodeError (node:internal/errors:999:15)
+    at wrappedFn (node:internal/errors:544:14)
+    at checkExecSyncError (node:child_process:990:11)
+    at execFileSync (node:child_process:1026:15)
+    at buildSceneVideo (C:\reels\the-list\build_video.js:76:3)
+    at Array.map (<anonymous>)
+    at Object.<anonymous> (C:\reels\the-list\build_video.js:80:27)
+    at Module._compile (node:internal/modules/cjs/loader:1968:14)
+    at Object..js (node:internal/modules/cjs/loader:2108:10)
+    at Module.load (node:internal/modules/cjs/loader:1690:32) {
+  status: 4294967274,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(3811) [Uint8Array] [
+      102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+      111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+      108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+      103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+      121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+       48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+       32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+      108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+      105, 108, 116,  32,
+      ... 3711 more items
+    ]
+  ],
+  pid: 31500,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(3811) [Uint8Array] [
+    102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+    111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+    108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+    103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+    121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+     48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+     32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+    108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+    105, 108, 116,  32,
+    ... 3711 more items
+  ]
+}
+
+Node.js v26.13.1
+[video] skip (exists) C:\reels\the-list\video\scene_1.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_2.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_3.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_4.mp4
+[video] Rendering scene 5 (8.35s)
+node : ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+In Zeile:1 Zeichen:454
++ ... User'); cd C:\reels\the-list; node build_video.js *>> build_video.log
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ffmpeg version ...mpeg developers:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=8.347999999999999:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_5.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:07.85, start: 0.046042, bitrate: 118 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 118 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000002d62c67fa80] using SAR=1/1
+[libx264 @ 000002d62c67fa80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002d62c67fa80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000002d62c67fa80] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_5.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   35 fps=0.0 q=29.0 size=       0KiB time=00:00:01.10 bitrate=   0.3kbits/s speed=2.17x elapsed=0:00:00.50    
+frame=  166 fps=162 q=29.0 size=       0KiB time=00:00:05.46 bitrate=   0.1kbits/s speed=5.32x elapsed=0:00:01.02    
+[out#0/mp4 @ 000002d62c5c2700] video:47KiB audio:140KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 5.197542%
+frame=  234 fps=206 q=-1.0 Lsize=     196KiB time=00:00:07.82 bitrate= 205.1kbits/s speed=6.89x elapsed=0:00:01.13    
+[libx264 @ 000002d62c67fa80] frame I:1     Avg QP:17.43  size: 26379
+[libx264 @ 000002d62c67fa80] frame P:59    Avg QP:10.38  size:    91
+[libx264 @ 000002d62c67fa80] frame B:174   Avg QP:13.67  size:    88
+[libx264 @ 000002d62c67fa80] consecutive B-frames:  0.9%  0.0%  0.0% 99.1%
+[libx264 @ 000002d62c67fa80] mb I  I16..4: 49.6% 43.4%  7.0%
+[libx264 @ 000002d62c67fa80] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 000002d62c67fa80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.0%  skip:99.8%  
+L0:66.6% L1:33.4% BI: 0.0%
+[libx264 @ 000002d62c67fa80] 8x8 transform intra:43.4% inter:2.9%
+[libx264 @ 000002d62c67fa80] coded y,uvDC,uvAC intra: 4.7% 1.5% 1.5% inter: 0.0% 0.0% 0.0%
+[libx264 @ 000002d62c67fa80] i16 v,h,dc,p: 97%  1%  2%  0%
+[libx264 @ 000002d62c67fa80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 60% 10% 30%  0%  0%  0%  0%  0%  0%
+[libx264 @ 000002d62c67fa80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 48% 20%  7%  3%  4%  4%  5%  4%  4%
+[libx264 @ 000002d62c67fa80] i8c dc,h,v,p: 99%  1%  1%  0%
+[libx264 @ 000002d62c67fa80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000002d62c67fa80] ref P L0: 91.8%  1.3%  6.9%
+[libx264 @ 000002d62c67fa80] ref B L0: 40.6% 59.4%
+[libx264 @ 000002d62c67fa80] kb/s:48.28
+[aac @ 000002d62c6891c0] Qavg: 62819.203
+[video] Rendering scene 6 (6.57s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=6.572:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_6.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:06.07, start: 0.046042, bitrate: 120 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 119 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000029bad2ee680] using SAR=1/1
+[libx264 @ 0000029bad2ee680] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000029bad2ee680] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000029bad2ee680] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_6.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=   30 fps=0.0 q=29.0 size=       0KiB time=00:00:00.93 bitrate=   0.4kbits/s speed=1.79x elapsed=0:00:00.52    
+[out#0/mp4 @ 0000029bad251c00] video:36KiB audio:110KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 5.373359%
+frame=  181 fps=180 q=-1.0 Lsize=     153KiB time=00:00:06.04 bitrate= 207.3kbits/s speed=6.03x elapsed=0:00:01.00    
+[libx264 @ 0000029bad2ee680] frame I:1     Avg QP:18.64  size: 19050
+[libx264 @ 0000029bad2ee680] frame P:45    Avg QP:10.60  size:    97
+[libx264 @ 0000029bad2ee680] frame B:135   Avg QP:13.67  size:    91
+[libx264 @ 0000029bad2ee680] consecutive B-frames:  0.6%  0.0%  0.0% 99.4%
+[libx264 @ 0000029bad2ee680] mb I  I16..4: 34.2% 60.0%  5.8%
+[libx264 @ 0000029bad2ee680] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 0000029bad2ee680] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.3%  0.0%  0.0%  direct: 0.0%  skip:99.7%  
+L0:66.0% L1:34.0% BI: 0.0%
+[libx264 @ 0000029bad2ee680] 8x8 transform intra:59.9% inter:1.7%
+[libx264 @ 0000029bad2ee680] coded y,uvDC,uvAC intra: 3.5% 0.4% 0.4% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0000029bad2ee680] i16 v,h,dc,p: 97%  1%  2%  0%
+[libx264 @ 0000029bad2ee680] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 62% 16% 22%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0000029bad2ee680] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 51% 19%  8%  3%  3%  5%  4%  4%  3%
+[libx264 @ 0000029bad2ee680] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0000029bad2ee680] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000029bad2ee680] ref P L0: 94.3%  1.2%  4.5%
+[libx264 @ 0000029bad2ee680] ref B L0: 41.2% 58.8%
+[libx264 @ 0000029bad2ee680] ref B L1: 99.9%  0.1%
+[libx264 @ 0000029bad2ee680] kb/s:47.34
+[aac @ 0000029bad303b00] Qavg: 62566.914
+[video] Rendering scene 7 (7.15s)
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'color=c=0x0D0D0D:s=1080x1920:d=7.148:r=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1080x1920 [SAR 1:1 DAR 9:16], 30 fps, 30 tbr, 30 tbn
+Input #1, mp3, from 'C:\reels\the-list\audio\scene_7.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:06.65, start: 0.046042, bitrate: 114 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 113 kb/s, start 0.046042
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000002776deed640] using SAR=1/1
+[libx264 @ 000002776deed640] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002776deed640] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000002776deed640] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - 
+http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 
+psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 
+chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 
+constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 
+keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 
+qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\reels\the-list\video\scene_7.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 
+fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=    5 fps=0.0 q=29.0 size=       0KiB time=00:00:00.10 bitrate=   3.8kbits/s speed=0.191x elapsed=0:00:00.52    
+frame=  122 fps=119 q=29.0 size=       0KiB time=00:00:04.00 bitrate=   0.1kbits/s speed=3.89x elapsed=0:00:01.02    
+[out#0/mp4 @ 000002776de22600] video:37KiB audio:115KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 5.543454%
+frame=  198 fps=169 q=-1.0 Lsize=     160KiB time=00:00:06.62 bitrate= 197.7kbits/s speed=5.66x elapsed=0:00:01.17    
+[libx264 @ 000002776deed640] frame I:1     Avg QP:14.04  size: 20240
+[libx264 @ 000002776deed640] frame P:50    Avg QP:10.54  size:    88
+[libx264 @ 000002776deed640] frame B:147   Avg QP:13.67  size:    83
+[libx264 @ 000002776deed640] consecutive B-frames:  1.0%  0.0%  0.0% 99.0%
+[libx264 @ 000002776deed640] mb I  I16..4: 58.2% 35.9%  5.8%
+[libx264 @ 000002776deed640] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 000002776deed640] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  
+L0:62.3% L1:37.7% BI: 0.0%
+[libx264 @ 000002776deed640] 8x8 transform intra:36.0% inter:6.6%
+[libx264 @ 000002776deed640] coded y,uvDC,uvAC intra: 3.7% 1.1% 1.1% inter: 0.0% 0.0% 0.0%
+[libx264 @ 000002776deed640] i16 v,h,dc,p: 98%  1%  1%  0%
+[libx264 @ 000002776deed640] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 61%  4% 35%  0%  0%  0%  0%  0%  0%
+[libx264 @ 000002776deed640] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 46% 20% 12%  3%  3%  6%  4%  4%  3%
+[libx264 @ 000002776deed640] i8c dc,h,v,p: 99%  0%  0%  0%
+[libx264 @ 000002776deed640] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000002776deed640] ref P L0: 91.5%  1.7%  5.7%  1.1%
+[libx264 @ 000002776deed640] ref B L0: 41.2% 58.8%
+[libx264 @ 000002776deed640] kb/s:44.76
+[aac @ 000002776ded3f80] Qavg: 62241.082
+[video] Concatenating scenes...
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000020792774840] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from 'C:\reels\the-list\video\concat_list.txt':
+  Duration: N/A, start: -0.023220, bitrate: 214 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 60 
+kb/s, 30 fps, 30 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 153 kb/s, start -0.023220
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mp4, to 'C:\reels\the-list\video\full_raw.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 
+q=2-31, 60 kb/s, 30 fps, 30 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 153 kb/s
+    Metadata:
+      handler_name    : SoundHandler
+Press [q] to stop, [?] for help
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000207927b5e00] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 392192, current: 391695; changing to 392193. This may 
+result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000207927b70c0] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 888335, current: 888171; changing to 888336. This may 
+result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000207927b7900] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 1124715, current: 1124281; changing to 1124716. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000020792774e00] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 1650617, current: 1650393; changing to 1650618. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000207927748c0] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 1996505, current: 1995518; changing to 1996506. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000207927a0080] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000020794b506c0] Non-monotonic DTS; previous: 2262782, current: 2262322; changing to 2262783. This 
+may result in incorrect timestamps in the output file.
+[out#0/mp4 @ 00000207926f0380] video:356KiB audio:1068KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.415360%
+frame= 1733 fps=0.0 q=-1.0 Lsize=    1487KiB time=00:00:57.94 bitrate= 210.2kbits/s speed= 838x elapsed=0:00:00.06    
+[video] Total duration: 57.95s
+[video] Generating ambient bed...
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[Parsed_tremolo_3 @ 000001e99c857d80] Value 0.070000 for parameter 'f' out of range [0.1 - 20000]
+[fc#0 @ 000001e99c854d80] Error applying option 'f' to filter 'tremolo': Result too large
+Error : Result too large
+node:child_process:1029
+    throw err;
+    ^
+
+Error: Command failed: ffmpeg -y -f lavfi -i sine=frequency=82:duration=57.949002 -f lavfi -i 
+sine=frequency=123:duration=57.949002 -filter_complex [0:a]volume=0.05,tremolo=f=0.1:d=0.3[a0];[1:a]volume=0.03,tremolo
+=f=0.07:d=0.25[a1];[a0][a1]amix=inputs=2:duration=longest[aout] -map [aout] C:\reels\the-list\video\ambient_bed.wav
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+
+  libavutil      61.  1.102 / 61.  1.102
+
+  libavcodec     63.  1.102 / 63.  1.102
+
+  libavformat    63.  1.102 / 63.  1.102
+
+  libavdevice    63.  1.102 / 63.  1.102
+
+  libavfilter    12.  1.102 / 12.  1.102
+
+  libswscale     10.  1.102 / 10.  1.102
+
+  libswresample   7.  1.102 /  7.  1.102
+
+[Parsed_tremolo_3 @ 000001e99c857d80] Value 0.070000 for parameter 'f' out of range [0.1 - 20000]
+
+[fc#0 @ 000001e99c854d80] Error applying option 'f' to filter 'tremolo': Result too large
+
+Error : Result too large
+
+
+    at genericNodeError (node:internal/errors:999:15)
+    at wrappedFn (node:internal/errors:544:14)
+    at checkExecSyncError (node:child_process:990:11)
+    at execFileSync (node:child_process:1026:15)
+    at Object.<anonymous> (C:\reels\the-list\build_video.js:99:1)
+    at Module._compile (node:internal/modules/cjs/loader:1968:14)
+    at Object..js (node:internal/modules/cjs/loader:2108:10)
+    at Module.load (node:internal/modules/cjs/loader:1690:32)
+    at Module._load (node:internal/modules/cjs/loader:1480:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19) {
+  status: 4294967262,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(2483) [Uint8Array] [
+      102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+      111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+      108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+      103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+      121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+       48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+       32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+      108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+      105, 108, 116,  32,
+      ... 2383 more items
+    ]
+  ],
+  pid: 19296,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(2483) [Uint8Array] [
+    102, 102, 109, 112, 101, 103,  32, 118, 101, 114, 115, 105,
+    111, 110,  32,  57,  46,  48,  46,  50,  45, 102, 117, 108,
+    108,  95,  98, 117, 105, 108, 100,  45, 119, 119, 119,  46,
+    103, 121,  97, 110,  46, 100, 101, 118,  32,  67, 111, 112,
+    121, 114, 105, 103, 104, 116,  32,  40,  99,  41,  32,  50,
+     48,  48,  48,  45,  50,  48,  50,  54,  32, 116, 104, 101,
+     32,  70,  70, 109, 112, 101, 103,  32, 100, 101, 118, 101,
+    108, 111, 112, 101, 114, 115,  13,  10,  32,  32,  98, 117,
+    105, 108, 116,  32,
+    ... 2383 more items
+  ]
+}
+
+Node.js v26.13.1
+[video] skip (exists) C:\reels\the-list\video\scene_1.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_2.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_3.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_4.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_5.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_6.mp4
+[video] skip (exists) C:\reels\the-list\video\scene_7.mp4
+[video] Concatenating scenes...
+node : ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+In Zeile:1 Zeichen:454
++ ... User'); cd C:\reels\the-list; node build_video.js *>> build_video.log
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ffmpeg version ...mpeg developers:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e727b4ec0] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from 'C:\reels\the-list\video\concat_list.txt':
+  Duration: N/A, start: -0.023220, bitrate: 214 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 60 
+kb/s, 30 fps, 30 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 153 kb/s, start -0.023220
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mp4, to 'C:\reels\the-list\video\full_raw.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 
+q=2-31, 60 kb/s, 30 fps, 30 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 153 kb/s
+    Metadata:
+      handler_name    : SoundHandler
+Press [q] to stop, [?] for help
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e74bb0cc0] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 392192, current: 391695; changing to 392193. This may 
+result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e74bb0cc0] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 888335, current: 888171; changing to 888336. This may 
+result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e727bce40] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 1124715, current: 1124281; changing to 1124716. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e727bce40] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 1650617, current: 1650393; changing to 1650618. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e727bce40] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 1996505, current: 1995518; changing to 1996506. This 
+may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000016e727bce40] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 0000016e72e2e600] Non-monotonic DTS; previous: 2262782, current: 2262322; changing to 2262783. This 
+may result in incorrect timestamps in the output file.
+[out#0/mp4 @ 0000016e7272dd80] video:356KiB audio:1068KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.415360%
+frame= 1733 fps=0.0 q=-1.0 Lsize=    1487KiB time=00:00:57.94 bitrate= 210.2kbits/s speed= 868x elapsed=0:00:00.06    
+[video] Total duration: 57.95s
+[video] Generating ambient bed...
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, lavfi, from 'sine=frequency=82:duration=57.949002':
+  Duration: N/A, start: 0.000000, bitrate: 705 kb/s
+  Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s
+Input #1, lavfi, from 'sine=frequency=123:duration=57.949002':
+  Duration: N/A, start: 0.000000, bitrate: 705 kb/s
+  Stream #1:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s
+Stream mapping:
+  Stream #0:0 (pcm_s16le) -> volume:default
+  Stream #1:0 (pcm_s16le) -> volume:default
+  amix:default -> Stream #0:0 (pcm_s16le)
+Press [q] to stop, [?] for help
+Output #0, wav, to 'C:\reels\the-list\video\ambient_bed.wav':
+  Metadata:
+    ISFT            : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[out#0/wav @ 000001fe72b3ed00] video:0KiB audio:4991KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 0.001526%
+size=    4991KiB time=00:00:57.94 bitrate= 705.6kbits/s speed= 618x elapsed=0:00:00.09    
+[video] Mixing final audio + video...
+ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect 
+--enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp 
+--enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh 
+--enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread 
+--enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg 
+--enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode 
+--enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 
+--enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs 
+--enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi 
+--enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf 
+--enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl 
+--enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio 
+--enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame 
+--enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc 
+--enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis 
+--enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr 
+--enable-chromaprint --enable-whisper
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\reels\the-list\video\full_raw.mp4':
+[video] DONE -> C:\reels\the-list\the-list_final.mp4
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Duration: 00:00:57.95, start: 0.000000, bitrate: 210 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 
+50 kb/s, 29.93 fps, 30 tbr, 15360 tbn, start 0.023242 (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 150 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[aist#1:0/pcm_s16le @ 00000264f6160200] Guessed Channel Layout: mono
+Input #1, wav, from 'C:\reels\the-list\video\ambient_bed.wav':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:57.95, bitrate: 705 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
+Stream mapping:
+  Stream #0:1 (aac) -> amix
+  Stream #1:0 (pcm_s16le) -> amix
+  Stream #0:0 -> #0:0 (copy)
+  amix:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+Output #0, mp4, to 'C:\reels\the-list\the-list_final.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], 
+q=2-31, 50 kb/s, 29.93 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+frame=  563 fps=0.0 q=-1.0 size=     256KiB time=00:00:18.73 bitrate= 111.9kbits/s speed=36.9x elapsed=0:00:00.50    
+frame= 1154 fps=1121 q=-1.0 size=    1024KiB time=00:00:38.51 bitrate= 217.8kbits/s speed=37.4x elapsed=0:00:01.02    
+frame= 1685 fps=1097 q=-1.0 size=    1280KiB time=00:00:56.25 bitrate= 186.4kbits/s speed=36.6x elapsed=0:00:01.53    
+[mp4 @ 00000264f618c540] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000264f415f680] video:356KiB audio:1193KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing 
+overhead: 4.058781%
+frame= 1733 fps=1084 q=-1.0 Lsize=    1612KiB time=00:00:57.94 bitrate= 227.8kbits/s speed=36.2x elapsed=0:00:01.59    
+[aac @ 00000264f65e8740] Qavg: 63801.668

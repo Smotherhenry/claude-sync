@@ -1,0 +1,3 @@
+file 'C:/reels/the-list/audio/s3_seg0.mp3'
+file 'C:/reels/the-list/audio/s3_pause0.mp3'
+file 'C:/reels/the-list/audio/s3_seg1.mp3'
